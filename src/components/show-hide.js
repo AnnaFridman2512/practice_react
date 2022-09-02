@@ -5,11 +5,6 @@ export default function HideOrShow(){
     const [show, setShow] = useState(true);
 
 
-
-  /*   useEffect(()=>{
-        setShow(!show)
-    });*/
-
     return (
         <>
 

@@ -1,6 +1,12 @@
 import './App.css';
 import React, { useState } from 'react';
-import HideOrShow from './show-hide.js';
+import HideOrShow from './components/show-hide.js';
+import DataBinding from './components/Data-Binding.js';
+import DisableBTN from './components/disableBTN.js';
+import Parent from './components/Parent.js';
+import Calc from './components/Calc';
+import Counter from './components/Counter.js';
+import UserData from './components/FetchWithUseEffect.js';
 
 function App() {
 
@@ -16,6 +22,12 @@ const userItems = users.map((user) => <li key={user.id}>{user.name}</li>)
     <>
     <ul>{userItems}</ul>
     <HideOrShow />
+    <DataBinding />
+    <DisableBTN />
+    <Parent />
+    <Calc />
+    <Counter />
+    <UserData />
     </>
 
   );
